@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    display: flex;
+    width: 100%;
+}
+.container1{
+    height: 1100px;
+    color: aliceblue;
+    width: 15%;
+    background-color: #0D5447;
+}
+.container2{
+    height: 100px;
+    width: 85%;
+}
+.container2-element{
+    background-color: #0D5447;
+    height: 100px;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.container2-element img{
+    height: 98px;
+    width: 7%;
+    border-radius: 50%;
+    float: right;
+}
+.container2-element h1{
+    float: right;
+    margin: 40px 20px;
+    color: #FFF;
+    font-size: 2vh;
+}
+.container1 div{
+    height: 100px;
+    width: 100%;
+    background-color: #FFF;
+}
+.container1 div img{
+    height: 100px;
+    width: 50%;
+    margin: 0 12%;
+}
+.container1 a{
+    list-style-type: none;
+}
+.container1 ul li{
+    color: #FFF;
+    padding: 20px;
+}
+.container1 ul .principal{
+    background-color: #fff;
+    color: #0D5447;
+    font-weight: bold;
+}
+.container2-element2{
+    width: 75%;
+    height:890px;
+    border-radius: 5px;
+    box-shadow: 0.1px 0.2px 3px 0.2px #0D5447;
+    margin: 2% 3%;
+}
+#recherche{
+    height: 45px;
+    width: 25%;
+    margin: 25px;
+}
+.container2-element2 h3{
+    padding: 30px;
+    font-weight: 400;
+}
+.container2-element2 label{
+    font-size: 1.2vh;
+    margin: 1% 0 0 5%;
+}
+.container2-element2 textarea{
+    position: relative;
+    height: 70px;
+    width: 75%;
+    border-radius: 5px;
+    border: 1px solid #0D5447;
+}
+.container2-element2 .tache{
+    position: relative;
+    bottom: 30px;
+}
+.container2-element2 input{
+    height: 50px;
+    width: 70%;
+    margin: 15px 5px;
+    border-radius: 5px;
+    border: 1px solid #0D5447;
+}
+.container2-element2 button{
+    float: right;
+    margin: 2% 3% 0;
+    height: 60px;
+    width: 18%;
+    background-color: #0D5447;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+.container2-element2 button:hover{
+    border: 1px solid #0D5447;
+    color: #0D5447;
+    font-weight: bold;
+    background-color: #FFF;
+}
