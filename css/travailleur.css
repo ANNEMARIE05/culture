@@ -108,9 +108,11 @@ a{
     background-color: #0D5447;
     display: flex;
     color: #FFF;
+    justify-content: space-between;
+    padding: 1% 8% 0;
 }
 .tableau h3{
-    margin: 1% 10% 1% 1.5%;
+
 }
 input::placeholder{
     position: relative;
