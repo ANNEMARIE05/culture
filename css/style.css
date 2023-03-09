@@ -5,7 +5,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 header{
-    height: 350px;
+    height: 700px;
     width: 100%;
     background-image: url(../images/accueil.png);
     background-size: cover;
@@ -41,7 +41,7 @@ header h1{
     text-align: center;
     font-size: 3vh;
     font-weight: 100;
-    margin-top: 90px;
+    margin-top: 200px;
 }
 .center-div{
     margin: auto;
@@ -54,13 +54,13 @@ header h1{
     display: flex;
 }
 .center-div .QSN img{
-    height: 350px;
-    margin: 10px;
-    width: 45%;
+    height: 400px;
+    margin: 2%;
+    width: 43%;
     border-radius: 20px;
 }
 .center-div .QSN div{
-    padding: 20px 60px 30px;
+    padding: 20px 11% 30px;
     margin: 40px;
 }
 .center-div .QSN div p{
@@ -81,7 +81,7 @@ footer{
     margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
-    height: 200px;
+    height: 300px;
     width: 100%;
 }
 footer .foot-section{
@@ -94,7 +94,7 @@ footer .foot-section{
 footer .foot-section div{
     height: 180px;
     width: 200px;
-    margin: 10px;
+    margin: 2% 7%;
 }
 footer .foot-section h4{
     font-size: 2vh;
