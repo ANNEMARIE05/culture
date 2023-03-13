@@ -9,34 +9,22 @@
     width: 100%;
 }
 .container1{
-    height: 1100px;
+    height: 1050px;
     color: aliceblue;
     width: 15%;
     background-color: #0D5447;
 }
 .container2{
     height: 100px;
-    width: 85%;
+    background-color: #0D5447;
+    width: 100%;
 }
 .container2-element{
-    background-color: #0D5447;
     height: 100px;
     width: 100%;
 }
 a{
     text-decoration: none;
-}
-.container2-element img{
-    height: 98px;
-    width: 7%;
-    border-radius: 50%;
-    float: right;
-}
-.container2-element h1{
-    float: right;
-    margin: 40px 20px;
-    color: #FFF;
-    font-size: 2vh;
 }
 .container1 div{
     height: 100px;
@@ -53,7 +41,7 @@ a{
 }
 .container1 ul li{
     color: #FFF;
-    padding: 20px;
+    padding: 10px;
 }
 .container1 ul .principal{
     background-color: #fff;
@@ -64,12 +52,27 @@ a{
 .container2-element2{
     display: flex;
     width: 100%;
-    margin-left: 3.1%;
 }
 .container2-element2 div{
-    height: 250px;
+    height: 220px;
     border-radius: 20px;
     width: 22%;
     background-color: #11A076;
     margin: 2% 0.9%;
+}
+.admin-img{
+    margin: 250px 20% 0;
+    background-color: #0D5447;
+}
+.admin-img h1{
+    font-size: 18px;
+    margin: 5px;
+}
+.admin-img img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.container1 i{
+    margin: 10px;
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/538942b924.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <link rel="stylesheet" href="../css/payement.css ">
 </head>
@@ -11,25 +12,41 @@
     <div class="container">
         <div class="container1">
             <div>
-                <a href="../index.html"><img src="../images/logo.jpg" alt=""></a>
+                <img src="../images/logo.jpg" alt="">
             </div>
             <ul>
-                <a href="accueil.html"><li>ACCUEIL</li></a>
-                <a href="travailleur.html"><li>TRAVAILLEURS</li></a>
-                <a href="tache.html"><li>TÂCHES</li></a>
-                <a href="#"><li class="principal">PAYEMENTS</li></a>
-                <a href="admin.html"><li>ADMINISTRATEURS</li></a>
+                <a href="accueil.html"><li><i class="fa-solid fa-house"></i>TABLEAU</li></a>
+                <a href="travailleur.html"><li><i class="fa-solid fa-user"></i>TRAVAILLEURS</li></a>
+                <a href="tache.html"><li><i class="fa-solid fa-clipboard-list"></i>TÂCHES</li></a>
+                <a href="#"><li class="principal"><i class="fa-solid fa-money-bill-wave"></i>PAYEMENTS</li></a>
+                <a href="bilan.html"><li><i class="fa-solid fa-circle-check"></i>BILAN</li></a>
+                <a href="admin.html"><li><i class="fa-solid fa-coins"></i>ADMINISTRATEUR</li></a>
                 <hr>
-                <a href="parametre.html"><li>PARAMETRES</li></a>
-                <a href="../index.html"><li>DECONNEXION</li></a>
+                <a href="parametre.html"><li><i class="fa-solid fa-gear"></i>PARAMETRES</li></a>
+                <a href="../index.html"><li><i class="fa-solid fa-right-from-bracket"></i>DECONNEXION</li></a>
             </ul>
+            <section class="admin-img">
+                <img src="../images/admin.jpg" alt="">
+                <h1>STEVE DAVID</h1>
+            </section>
         </div>
         <div class="container2">
             <div class="container2-element">
-                <img src="../images/admin.jpg" alt="">
-                <h1>STEVE</h1>
+                <input type="search" name="" placeholder="  Recherche" id="recherche">
             </div>
-            <div class="container2-element2">
+            <div class="cash">
+                <select name="" id="">
+                    <option value="">SELECTIONNEZ UN TRAVAILLEUR</option>
+                </select><br>
+                <label for="">CONTACT :</label><input type="text"><br>
+                <label for="">SOMMES :</label><input type="text">FCFA
+                <div class="cashPay">
+                    <label for="">MODE DE PAYEMENT :</label>
+                    <div class="orange"><p>ORANGE <br> MONEY </p><img src="../images/orange.png" alt=""></div>
+                    <div class="moov"><p>MOOV <br> MONEY </p><img src="../images/moov.jpeg" alt=""></div>
+                    <div class="wave"><p><br> WAVE </p><img src="../images/wave.png" alt=""></div>
+                    <div class="mtn"><p>MTN <br> MONEY </p><img src="../images/mtn.png" alt=""></div>
+                </div>
             </div>
         </div>
     </div>

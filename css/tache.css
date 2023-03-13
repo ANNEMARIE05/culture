@@ -9,7 +9,7 @@
     width: 100%;
 }
 .container1{
-    height: 1100px;
+    height: 1050px;
     color: aliceblue;
     width: 15%;
     background-color: #0D5447;
@@ -26,18 +26,6 @@
 a{
     text-decoration: none;
 }
-.container2-element img{
-    height: 98px;
-    width: 7%;
-    border-radius: 50%;
-    float: right;
-}
-.container2-element h1{
-    float: right;
-    margin: 40px 20px;
-    color: #FFF;
-    font-size: 2vh;
-}
 .container1 div{
     height: 100px;
     width: 100%;
@@ -53,7 +41,7 @@ a{
 }
 .container1 ul li{
     color: #FFF;
-    padding: 20px;
+    padding: 10px;
 }
 .container1 ul .principal{
     background-color: #fff;
@@ -71,6 +59,7 @@ a{
     height: 45px;
     width: 25%;
     margin: 25px;
+    float: right;
 }
 .container2-element2 h3{
     padding: 30px;
@@ -113,4 +102,20 @@ a{
     color: #0D5447;
     font-weight: bold;
     background-color: #FFF;
+}
+.admin-img{
+    margin: 250px 20% 0;
+    background-color: #0D5447;
+}
+.admin-img h1{
+    font-size: 18px;
+    margin: 5px;
+}
+.admin-img img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.container1 i{
+    margin: 10px;
 }
