@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/538942b924.js" crossorigin="anonymous"></script>
     <title>Document</title>
-    <link rel="stylesheet" href="../css/accueil.css ">
+    <link rel="stylesheet" href="../css/travailleur.css ">
 </head>
 <body>
     <div class="container">
@@ -14,13 +14,10 @@
             <div>
                 <img src="../images/logo.jpg" alt="">
             </div>
-            <section class="admin-img">
-                <img src="../images/admin.jpg" alt="">
-                <h1>STEVE DAVID</h1>
-            </section>
             <ul>
-                <a href="#"><li class="principal"><i class="fa-solid fa-house"></i>TABLEAU</li></a>
-                <a href="travailleur.html"><li><i class="fa-solid fa-user"></i>TRAVAILLEURS</li></a>
+                <a href="accueil.html"><li><i class="fa-solid fa-house"></i>TABLEAU</li></a>
+                <a href="#"><li class="principal"><i class="fa-solid fa-user"></i>TRAVAILLEURS</li></a>
+                <a href="adminSec.html"><li><i class="fa-solid fa-user-tie"></i>ADMINISTRATEURS</li></a>
                 <a href="tache.html"><li><i class="fa-solid fa-clipboard-list"></i>TÂCHES</li></a>
                 <a href="payement.html"><li><i class="fa-solid fa-money-bill-wave"></i>PAYEMENTS</li></a>
                 <a href="bilan.html"><li><i class="fa-solid fa-circle-check"></i>BILAN</li></a>
@@ -32,9 +29,19 @@
         </div>
         <div class="container2">
             <div class="container2-element">
-                <input type="search" name="" placeholder="  Recherche" id="recherche">
+                <input type="search" name="" placeholder="Recherche" id="recherche">
+            </div>
+            <div class="container2-element2">
+               <h3>AJOUTER UN NOUVEAU TRAVAILLEUR</h3>
+               <label for="name">NOM :</label><input type="text" placeholder="Nom" class="nom">
+                <label for="surname">PRENOM :</label><input type="text" placeholder="Prenom" class="prenom">
+                <label for="status">STATUT :</label><input type="text" placeholder="Statut" class="statut">
+                <label for="contact">CONTACT :</label><input type="number" placeholder="Contact" class="contact">
+                <button class="btn">+  AJOUTER</button>
             </div>
         </div>
     </div>
+
+    <script src="../js/travailleur.js"></script>
 </body>
 </html>

@@ -41,7 +41,7 @@ a{
 }
 .container1 ul li{
     color: #FFF;
-    padding: 10px;
+    padding: 3% 3% 0 3%;
 }
 .container1 ul .principal{
     background-color: #fff;
@@ -57,31 +57,46 @@ a{
     float: right;
 }
 .admin-img{
-    margin: 250px 20% 0;
-    background-color: #0D5447;
-}
-.admin-img h1{
-    font-size: 18px;
-    margin: 5px;
+    height: 150px;
+    width: 200px;
+    margin: 10% 25% 20% 20%;
 }
 .admin-img img{
     height: 150px;
     width: 150px;
     border-radius: 50%;
-}
-.container1 i{
     margin: 10px;
 }
-
-.param{
-    height: 300px;
-    width: 97%;
-    margin: 30px;
-    display: flex;
+.container1 i{
+    padding: 5%;
 }
-.param div{
-    height: 300px;
+
+.profil{
+    width: 95%;
+    margin: 2% 4.5%;
+    display: flex;    
+    flex-wrap: wrap;
+}
+.profil div{
+    height: 230px;
+    padding: 20px;
     width: 30%;
-    margin: 0 2%;
-    background-color: black;
+    margin: 1%;
+    background-color: #11a0752d;
+    /* background-color: #11A076; */
+
+}
+.profil h1{
+    font-size: 1.5rem;
+    margin: 15px;    
+    font-weight: 500;
+}
+.profil p{
+    line-height: 1.3;
+    font-size: 1.1rem;
+
+    padding: 10px;
+}
+.profil i{
+    float: right;
 }

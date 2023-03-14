@@ -104,17 +104,6 @@ input::placeholder{
     position: relative;
     left: 10px;
 }
-.admin-img{
-    height: 150px;
-    width: 200px;
-    margin: 10% 25% 20% 20%;
-}
-.admin-img img{
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    margin: 10px;
-}
 .container1 i{
     padding: 5%;
 }

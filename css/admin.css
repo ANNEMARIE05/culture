@@ -41,7 +41,7 @@ a{
 }
 .container1 ul li{
     color: #FFF;
-    padding: 10px;
+    padding: 3% 3% 0 3%;
 }
 .container1 ul .principal{
     background-color: #fff;
@@ -56,19 +56,12 @@ a{
     margin: 25px;
     float: right;
 }
+
 .admin-img{
-    margin: 250px 20% 0;
-    background-color: #0D5447;
-}
-.admin-img h1{
-    font-size: 18px;
-    margin: 5px;
-}
-.admin-img img{
     height: 150px;
-    width: 150px;
-    border-radius: 50%;
+    width: 200px;
+    margin: 10% 25% 20% 20%;
 }
 .container1 i{
-    margin: 10px;
+    padding: 5%;
 }
