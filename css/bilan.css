@@ -70,3 +70,30 @@ a{
 .container1 i{
     padding: 5%;
 }
+.mesBilan{
+    height: 300px;
+    width: 96%;
+    margin: 2%;
+    display: flex;
+}
+.mesBilan div{
+    height: 250px;
+    width: 32%;
+    margin: 1%;
+    background-color: #0D5447;
+}
+.mesBilans{
+    height: 260px;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    background-color: #0D5447;
+}
+.mesBilans div{
+    height: 230px;
+    border-radius: 50%;
+    width: 28%;
+    background-color: #FFF;
+    margin: 2% 5%;
+    border: 3px solid #0D5447;
+}
