@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.connexion{
+    height: 500px;
+    margin: 13% auto;
+    width: 600px;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(34,34,34,0.6),rgba(34,34,34,0.6)),
+    url(../images/pexels-pixabay-50707.jpg);
+}
+body{
+    background-color: #11a0756c;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.connexion h1{
+    text-align: center;
+    color: #FFF;
+    padding: 30px 20px 50px 0;
+}
+.connexion .div{
+    height: 500px;
+    width: 540px;
+    padding: 20px;
+    margin: 5%;
+}
+.connexion div input{
+    height: 50px;
+    margin: 10px 2px;
+    width: 500px;
+    border: 1px solid #FFF;
+    border-radius: 50px;
+}
+.connexion div input::placeholder{
+    left: 20px;
+    position: relative;
+}
+.connexion div label{
+    margin: 10px 20px;
+    color: #FFF;
+}
+.connexion .Div{
+    height: 500px;
+    width: 600px;
+    border-radius: 10px;
+    background-color: #11a0754c;
+}
+button {
+    height: 50px;
+    width: 180px;
+    background-color: #11A076;
+    margin: 7% 30%;
+}

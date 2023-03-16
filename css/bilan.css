@@ -10,16 +10,16 @@
 }
 .container1{
     height: 1050px;
-    color: aliceblue;
+    color: #11A076;
     width: 15%;
-    background-color: #0D5447;
+    box-shadow: 0 0 2px 0 #11A076;
 }
 .container2{
     height: 100px;
     width: 85%;
 }
 .container2-element{
-    background-color: #0D5447;
+    background-color: #11A076;
     height: 100px;
     width: 100%;
 }
@@ -40,12 +40,12 @@ a{
     list-style-type: none;
 }
 .container1 ul li{
-    color: #FFF;
+    color: #11A076;
     padding: 3% 3% 0 3%;
 }
 .container1 ul .principal{
-    background-color: #fff;
-    color: #0D5447;
+    background-color: #11A076;
+    color: #FFF;
     font-weight: bold;
     margin-top: 5px;
 }
@@ -59,7 +59,7 @@ a{
 .admin-img{
     height: 150px;
     width: 200px;
-    margin: 10% 25% 20% 20%;
+    margin: 10% 25% 30% 18%;
 }
 .admin-img img{
     height: 150px;
@@ -80,14 +80,13 @@ a{
     height: 250px;
     width: 32%;
     margin: 1%;
-    background-color: #0D5447;
+    background-color: #11A076;
 }
 .mesBilans{
     height: 260px;
     width: 60%;
     margin: auto;
     display: flex;
-    background-color: #0D5447;
 }
 .mesBilans div{
     height: 230px;
@@ -95,5 +94,5 @@ a{
     width: 28%;
     background-color: #FFF;
     margin: 2% 5%;
-    border: 3px solid #0D5447;
+    border: 3px solid #11A076;
 }

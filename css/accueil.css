@@ -12,14 +12,14 @@
     height: 1050px;
     color: aliceblue;
     width: 15%;
-    background-color: #0D5447;
+    box-shadow: 0 0 2px 0 #11A076;
 }
 .container2{
     height: 100px;
     width: 85%;
 }
 .container2-element{
-    background-color: #0D5447;
+    background-color: #11A076;
     height: 100px;
     width: 100%;
 }
@@ -40,12 +40,12 @@ a{
     list-style-type: none;
 }
 .container1 ul li{
-    color: #FFF;
+    color: #11A076;
     padding: 3% 3% 0 3%;
 }
 .container1 ul .principal{
-    background-color: #fff;
-    color: #0D5447;
+    background-color: #11A076;
+    color: #FFF;
     font-weight: bold;
     margin-top: 5px;
 }
@@ -57,9 +57,10 @@ a{
     float: right;
 }
 .admin-img{
+    color: #11A076;
     height: 150px;
     width: 200px;
-    margin: 10% 25% 20% 20%;
+    margin: 10% 25% 30% 18%;
 }
 .admin-img img{
     height: 150px;
