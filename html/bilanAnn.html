@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/538942b924.js" crossorigin="anonymous"></script>
     <title>Document</title>
-    <link rel="stylesheet" href="../css/travailleur.css ">
+    <link rel="stylesheet" href="../css/bilan.css ">
 </head>
 <body>
     <div class="container">
@@ -20,10 +20,10 @@
             </section>
             <ul>
                 <a href="accueil.html"><li><i class="fa-solid fa-house"></i>TABLEAU</li></a>
-                <a href="#"><li class="principal"><i class="fa-solid fa-user"></i>TRAVAILLEURS</li></a>
+                <a href="travailleur.html"><li><i class="fa-solid fa-user"></i>TRAVAILLEURS</li></a>
                 <a href="tache.html"><li><i class="fa-solid fa-clipboard-list"></i>TÂCHES</li></a>
                 <a href="payement.html"><li><i class="fa-solid fa-money-bill-wave"></i>PAYEMENTS</li></a>
-                <a href="bilan.html"><li><i class="fa-solid fa-circle-check"></i>BILAN</li></a>
+                <a href="#"><li class="principal"><i class="fa-solid fa-circle-check"></i>BILAN</li></a>
                 <a href="#"><li><i class="fa-solid fa-coins"></i>ADMIN</li></a>
                 <a href="parametre.html"><li><i class="fa-solid fa-gear"></i>PARAMETRES</li></a>
                 <a href="../index.html"><li><i class="fa-solid fa-right-from-bracket"></i>DECONNEXION</li></a>
@@ -31,28 +31,28 @@
         </div>
         <div class="container2">
             <div class="container2-element">
-                <input type="search" name="" placeholder="Recherche" id="recherche">
             </div>
-            <div class="container2-element2">
-               <h3>AJOUTER UN NOUVEAU TRAVAILLEUR</h3>
-               <label for="name">NOM :</label><input type="text" placeholder="Nom" class="nom">
-                <label for="surname">PRENOM :</label><input type="text" placeholder="Prenom" class="prenom">
-                <label for="status">STATUT :</label><input type="text" placeholder="Statut" class="statut">
-                <label for="contact">CONTACT :</label><input type="number" placeholder="Contact" class="contact">
-                <button class="btn">+  AJOUTER</button>
+
+
+            <div class="class">
+                <a href="bilan.html"><div>PAR JOUR</div></a>
+                <a href="bilanSem.html"><div>PAR SEMAINE</div></a>
+                <a href="bilanMois.html"><div>PAR MOIS</div></a>
+                <a href="#" class="choix"><div>ANNEES</div></a>
             </div>
+
+
             <table>
                 <tr>
-                  <td>N°</td>
-                  <td>NOMS</td>
-                  <td>PRENOMS</td>
-                  <td>STATUS</td>
-                  <td>CONTACTS</td>
+                  <td>MOIS</td>
+                  <td>TRAVAILLEURS</td>
+                  <td>TÂCHES ACCOMPLIT</td>
+                  <td>TÂCHES EN COURS</td>
+                  <td>TÂCHES NON TERMINEES</td>
                 </tr>
             </table>
+            
         </div>
     </div>
-
-    <script src="../js/travailleur.js"></script>
 </body>
 </html>

@@ -71,28 +71,74 @@ a{
     padding: 5%;
 }
 .mesBilan{
-    height: 300px;
-    width: 96%;
-    margin: 2%;
+    height: 350px;
+    width: 93%;
+    margin: 2% 3%;
     display: flex;
 }
-.mesBilan div{
-    height: 250px;
+.mesBilan .items{
+    height: 320px;
+    color: #FFF;
     width: 32%;
     margin: 1%;
     background-color: #11A076;
 }
 .mesBilans{
-    height: 260px;
-    width: 60%;
-    margin: auto;
+    height: 350px;
+    width: 93%;
+    margin: 2% 3%;
     display: flex;
 }
-.mesBilans div{
-    height: 230px;
+.mesBilans .items{
+    height: 320px;
+    color: #FFF;
+    width: 32%;
+    margin: 1%;
+    background-color: #11A076;
+}
+.items .div{
+    height: 160px;
+    text-align: center;
+    width: 170px;
+    margin: 8% auto 0;
     border-radius: 50%;
-    width: 28%;
+    color: black;
     background-color: #FFF;
-    margin: 2% 5%;
-    border: 3px solid #11A076;
+}
+.div label{
+    position: relative;
+    top: 70px;
+}
+.items .span{
+    height: 50px;
+    width: 100%;
+    background-color: #FFF;
+    position: relative;
+    top: 35px;
+    border: 1px solid #11A076;
+}
+.items h1{
+    text-align: center;
+}
+.class {
+    text-align: center;
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: #FFF;
+    border: 1px solid #11A076;
+
+}
+.class a{
+    color: #FFF;
+    height: 80px;
+    width: 25%;
+    background-color: #11A076;
+    border: 1px solid #FFF;
+    padding: 30px;
+}
+.class .choix{
+    color: #11A076;
+    background-color: #FFF;
+    border: 1px solid #11A076;
 }

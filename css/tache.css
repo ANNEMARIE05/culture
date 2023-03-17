@@ -122,3 +122,18 @@ a{
 .container1 i{
     padding: 5%;
 }
+table{
+    width: 95%;
+    margin: 2.5%;
+    color: #FFF;
+    font-weight: bold;
+}
+table, th, td {
+    height: 50px;
+    border-collapse: collapse;
+    background-color: #11A076;
+    text-align: center;
+}
+td{
+    width: 15%;
+}
