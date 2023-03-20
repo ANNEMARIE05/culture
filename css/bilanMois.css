@@ -41,8 +41,8 @@ a{
 }
 .container1 ul li{
     color: #11A076;
-    padding: 3% 3% 0 3%;
     font-size: 1rem;
+    padding: 3% 3% 0 3%;
 }
 .container1 ul .principal{
     background-color: #11A076;
@@ -71,79 +71,75 @@ a{
 .container1 i{
     padding: 5%;
 }
-
-.cash{
-    height: 400px;
-    width: 97%;
-    box-shadow: 0.1px 0.2px 3px 0.2px #0D5447;
-    margin: 25px;
-    border-radius: 5px;
-}
-.cash select{
-    height: 40px;
-    width: 550px;
-    margin: 20px;
-}
-.cash label{
-    margin: 30px;
-}
-.cash input{
-    height: 40px;
-    width: 425px;
-    margin: 10px 0;
-}
-.cashPay{
+.mesBilan{
+    height: 350px;
+    width: 93%;
+    margin: 2% 3%;
     display: flex;
-    width: 75%;
-    justify-content: space-between;
 }
-.cashPay div{
-    height: 150px;
-    width: 300px;
-    margin: 15px;
-    border-radius: 20px;
-}
-.cashPay label{
-    margin-top: 5%;
-}
-.orange{
-    background-color: #EF6314;
-}
-.moov{
-    background-color: #479C32;
-}
-.wave{
-    background-color: #199EE1;
-}
-.mtn{
-    background-color: #F0D548;
-}
-.cashPay div img{
-    float: right;
-    height: 100px;
-    margin: 20px;
-    width: 100px;
-    border-radius: 50%;
-}
-.cashPay div p{
-    float: left;
-    position: relative;
-    top: 55px;
-    color: #fff;
-    left: 20px;
-}
-table{
-    width: 95%;
-    margin: 2.5%;
+.mesBilan .items{
+    height: 320px;
     color: #FFF;
-    font-weight: bold;
-}
-table, th, td {
-    height: 50px;
-    border-collapse: collapse;
+    width: 32%;
+    margin: 1%;
     background-color: #11A076;
+}
+.mesBilans{
+    height: 350px;
+    width: 93%;
+    margin: 2% 3%;
+    display: flex;
+}
+.mesBilans .items{
+    height: 320px;
+    color: #FFF;
+    width: 32%;
+    margin: 1%;
+    background-color: #11A076;
+}
+.items .div{
+    height: 160px;
+    text-align: center;
+    width: 170px;
+    margin: 8% auto 0;
+    border-radius: 50%;
+    color: black;
+    background-color: #FFF;
+}
+.div label{
+    position: relative;
+    top: 70px;
+}
+.items .span{
+    height: 50px;
+    width: 100%;
+    background-color: #FFF;
+    position: relative;
+    top: 35px;
+    border: 1px solid #11A076;
+}
+.items h1{
     text-align: center;
 }
-td{
-    width: 15%;
+.class {
+    text-align: center;
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: #FFF;
+    border: 1px solid #11A076;
+
+}
+.class a{
+    color: #FFF;
+    height: 80px;
+    width: 25%;
+    background-color: #11A076;
+    border: 1px solid #FFF;
+    padding: 30px;
+}
+.class .choix{
+    color: #11A076;
+    background-color: #FFF;
+    border: 1px solid #11A076;
 }

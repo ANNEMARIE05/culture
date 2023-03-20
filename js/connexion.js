@@ -1,31 +1,26 @@
-
 let admin = {
     email: 'admin.second@gmail.com',
     password: 'SND@admin',
 };
-const superAdmin = {
+let superAdmin = {
     email: 'super.Admin@gmail.com',
     password: 'superAdmin@',
 };
 
-let inpt  = document.querySelectorAll("input");
-let btn = document.querySelector("button"); 
 
-btn.addEventListener("click", function(e){
-    inpt.forEach(el=>{
-        if ((inpt[0].value == admin['email'] || inpt[0].value == superAdmin['email']) && 
-            (inpt[1].value == admin['password'] || inpt[1].value == superAdmin['password'])){
-                console.log("Oui")
-        } else{}
-        console.log(el.value)
-    })
+console.log(superAdmin.email);
+let email = document.querySelector(".email")
+let passe = document.querySelector(".passe").value;
+let btn = document.querySelector("button")
+
+
+
+btn.addEventListener("click" , function(e){
+   let et=email.value
+   console.log(et);
 })
 
-
-
-
-
-
-
-
+// localStorage.getItem("seConnecter")
+// let mesValeurs = JSON(localStorage.getItem("seConnecter"));
+// let recupererValeurs = localStorage.setItem('mesValeurs', JSON.stringify(admin));
 

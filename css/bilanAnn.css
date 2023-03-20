@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -41,6 +42,7 @@ a{
 }
 .container1 ul li{
     color: #11A076;
+    font-size: 1rem;
     padding: 3% 3% 0 3%;
 }
 .container1 ul .principal{
@@ -70,6 +72,56 @@ a{
 .container1 i{
     padding: 5%;
 }
+.mesBilan{
+    height: 350px;
+    width: 93%;
+    margin: 2% 3%;
+    display: flex;
+}
+.mesBilan .items{
+    height: 320px;
+    color: #FFF;
+    width: 32%;
+    margin: 1%;
+    background-color: #11A076;
+}
+.mesBilans{
+    height: 350px;
+    width: 93%;
+    margin: 2% 3%;
+    display: flex;
+}
+.mesBilans .items{
+    height: 320px;
+    color: #FFF;
+    width: 32%;
+    margin: 1%;
+    background-color: #11A076;
+}
+.items .div{
+    height: 160px;
+    text-align: center;
+    width: 170px;
+    margin: 8% auto 0;
+    border-radius: 50%;
+    color: black;
+    background-color: #FFF;
+}
+.div label{
+    position: relative;
+    top: 70px;
+}
+.items .span{
+    height: 50px;
+    width: 100%;
+    background-color: #FFF;
+    position: relative;
+    top: 35px;
+    border: 1px solid #11A076;
+}
+.items h1{
+    text-align: center;
+}
 .class {
     text-align: center;
     display: flex;
@@ -92,10 +144,19 @@ a{
     background-color: #FFF;
     border: 1px solid #11A076;
 }
+
 table{
-    width:100%;
+    width: 95%;
+    margin: 2.5%;
+    color: #FFF;
+    font-weight: bold;
 }
 table, th, td {
     height: 50px;
-    border:1px solid black;
+    border-collapse: collapse;
+    background-color: #11A076;
+    text-align: center;
+}
+td{
+    width: 20%;
 }

@@ -41,6 +41,7 @@ a{
 }
 .container1 ul li{
     color: #11A076;
+    font-size: 1rem;
     padding: 3% 3% 0 3%;
 }
 .container1 ul .principal{
@@ -70,7 +71,7 @@ a{
 }
 .container2-element2 input{
     height: 40px;
-    width: 19%;
+    width: 18%;
     border: 1px solid #11A076;
     border-radius: 5px;
 }

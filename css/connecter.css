@@ -4,15 +4,19 @@
     box-sizing: border-box;
 }
 .connexion{
-    height: 500px;
+    border-radius: 30px;
+    height: 470px;
     margin: 13% auto;
     width: 600px;
     background-image: linear-gradient(rgba(34,34,34,0.6),rgba(34,34,34,0.6)),
     url(../images/pexels-pixabay-50707.jpg);
 }
 body{
-    background-color: #11a0756c;
+    background-color: #11a0755d;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(rgba(17, 160, 117, 0.761),rgba(17, 160, 117, 0.761)),
+    url(../images/pexels-pixabay-50707.jpg);
+    background-size: cover;
 }
 .connexion h1{
     text-align: center;
@@ -20,7 +24,7 @@ body{
     padding: 30px 20px 50px 0;
 }
 .connexion .div{
-    height: 500px;
+    height: 470px;
     width: 540px;
     padding: 20px;
     margin: 5%;
@@ -41,10 +45,9 @@ body{
     color: #FFF;
 }
 .connexion .Div{
-    height: 500px;
+    height: 470px;
     width: 600px;
-    border-radius: 10px;
-    background-color: #11a0754c;
+    border-radius: 30px;
 }
 button {
     height: 50px;
