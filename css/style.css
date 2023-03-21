@@ -110,22 +110,71 @@ footer{
     display: flex;
     height: 350px;
     width: 100%;
-    background-color: #11A076;
+    background-color: #0e8561;
 }
-footer div{
-    height: 100px;
-    width: 100px;
-    background-color: #fff;
-    margin: 10px;
+.proverbe{
+    height: 210px;
+    width: 100%;
+    background-image: linear-gradient(rgba(17, 160, 117, 0.725),rgba(17, 160, 117, 0.646)),
+    url(../images/capture.png);
 }
-.footLogo img{
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
+.proverbe h1{
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 50px;
+    color: #FFF;
 }
-.footLogo{
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    margin: 5% 2%;
+footer .agrikaam{
+    height: 220px;
+    width: 1400px;
+    margin: 70px auto;
+}
+.agrikaam .footLog{
+    height: 150px;
+    width: 1400px;
+    background-color: #0e8561;
+}
+.footLog .footItem{
+    float: right;
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    width: 610px;
+}
+.footItem div{
+    height: 140px;
+    width: 190px;
+}
+.log{
+    float: left;
+    padding: 50px;
+    color: #FFF;
+}
+.footItem div h1{
+    font-size: 1.2rem;
+    color: #FFF;
+    font-weight: 100;
+    padding: 20px 0;
+}
+.footItem div p{
+    font-size: 1.1rem;
+    margin: 5px;
+    color: #fff;
+}
+.copyright{
+    display: flex;
+    justify-content: space-between;
+}
+.copyright div{
+    height: 50px;
+    width: 300px;
+}
+.copyright div p{
+    padding: 20px;
+    color: #FFF;
+}
+.copyright div i{
+    font-size: 30px;
+    margin: 20px;
+    color: #FFF;
 }

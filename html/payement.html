@@ -9,6 +9,34 @@
     <link rel="stylesheet" href="../css/payement.css ">
 </head>
 <body>
+
+    
+    <div class="modal-container">
+
+        <div class="text-container">
+            <div class="text-overlay">
+                <div class="text-modal">
+                    <h1>CHOISISSEZ LE MODE DE PAYEMENT</h1>
+                    <div class="choix">
+                        <div class="orange"><img src="../images/orange.png" alt=""></div>
+                        <div class="mtn"><img src="../images/mtn.png" alt=""></div>
+                        <div class="wave"><img src="../images/wave.png" alt=""></div>
+                        <div class="moov"><img src="../images/moov.jpeg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="overlay">
+            <div class="modal">
+                <h1>ENTREZ LE NUMERO DE TELEPHONE</h1>
+                <input type="text" placeholder=" +225 " class="inpt"> <br>
+                <button class="modal-trigger btn btn-clic">ENTREZ</button>
+            </div>
+        </div>
+    </div>
+
+
     <div class="container">
         <div class="container1">
             <div>
@@ -24,7 +52,6 @@
                 <a href="tache.html"><li><i class="fa-solid fa-clipboard-list"></i>TÂCHES</li></a>
                 <a href="#"><li class="principal"><i class="fa-solid fa-money-bill-wave"></i>PAYEMENTS</li></a>
                 <a href="bilan.html"><li><i class="fa-solid fa-circle-check"></i>BILAN</li></a>
-                <a href="#"><li><i class="fa-solid fa-coins"></i>ADMIN</li></a>
                 <a href="parametre.html"><li><i class="fa-solid fa-gear"></i>PARAMETRES</li></a>
                 <a href="../index.html"><li><i class="fa-solid fa-right-from-bracket"></i>DECONNEXION</li></a>
             </ul>
@@ -33,31 +60,21 @@
             <div class="container2-element">
                 <input type="search" name="" placeholder="  Recherche" id="recherche">
             </div>
-            <div class="cash">
-                <select name="" id="">
-                    <option value="">SELECTIONNEZ UN TRAVAILLEUR</option>
-                </select><br>
-                <label for="">CONTACT :</label><input type="text"><br>
-                <label for="">SOMMES :</label><input type="text">FCFA
-                <div class="cashPay">
-                    <label for="">MODE DE PAYEMENT :</label>
-                    <div class="orange"><p>ORANGE <br> MONEY </p><img src="../images/orange.png" alt=""></div>
-                    <div class="moov"><p>MOOV <br> MONEY </p><img src="../images/moov.jpeg" alt=""></div>
-                    <div class="wave"><p><br> WAVE </p><img src="../images/wave.png" alt=""></div>
-                    <div class="mtn"><p>MTN <br> MONEY </p><img src="../images/mtn.png" alt=""></div>
-                </div>
-                <table>
-                    <tr>
-                      <td>DATES</td>
-                      <td>NOMS ET PRENOMS</td>
-                      <td>SOMMES</td>
-                      <td>PAYEMENTS</td>
-                      <td>MODES</td>
-                      <td>HEURES</td>
-                    </tr>
-                </table>
-            </div>
+            
+            <table class="tableau">
+                <tr class="table">
+                    <td>NOMS ET PRENOMS</td>
+                    <td>SOMMES</td>
+                    <td>PAYEMENTS</td>
+                </tr>
+                <tr class="table2">
+                    <td>MARIE ANNE</td>
+                    <td>10000 FCFA</td>
+                    <td> <button class="modal-btn modal-trigger">PAYER</button> </td>
+                </tr>
+            </table>
         </div>
     </div>
+    <script src="../js/modal.js"></script>
 </body>
 </html>

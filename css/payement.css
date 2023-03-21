@@ -72,78 +72,171 @@ a{
     padding: 5%;
 }
 
-.cash{
-    height: 400px;
-    width: 97%;
-    box-shadow: 0.1px 0.2px 3px 0.2px #0D5447;
-    margin: 25px;
-    border-radius: 5px;
-}
-.cash select{
-    height: 40px;
-    width: 550px;
-    margin: 20px;
-}
-.cash label{
-    margin: 30px;
-}
-.cash input{
-    height: 40px;
-    width: 425px;
-    margin: 10px 0;
-}
-.cashPay{
-    display: flex;
-    width: 75%;
-    justify-content: space-between;
-}
-.cashPay div{
-    height: 150px;
-    width: 300px;
-    margin: 15px;
-    border-radius: 20px;
-}
-.cashPay label{
-    margin-top: 5%;
-}
-.orange{
-    background-color: #EF6314;
-}
-.moov{
-    background-color: #479C32;
-}
-.wave{
-    background-color: #199EE1;
-}
-.mtn{
-    background-color: #F0D548;
-}
-.cashPay div img{
-    float: right;
-    height: 100px;
-    margin: 20px;
-    width: 100px;
-    border-radius: 50%;
-}
-.cashPay div p{
-    float: left;
-    position: relative;
-    top: 55px;
-    color: #fff;
-    left: 20px;
-}
-table{
-    width: 95%;
-    margin: 2.5%;
-    color: #FFF;
+
+.tableau{
+    width: 1200px;
+    margin: 50px auto;
     font-weight: bold;
 }
-table, th, td {
+.tableau, .table, td {
     height: 50px;
     border-collapse: collapse;
     background-color: #11A076;
     text-align: center;
 }
+.table{
+    color: #FFF;
+}
 td{
-    width: 15%;
+    width: 300px;
+    font-size: 1.1rem;
+    font-weight: 100;
+}
+.table2 td {
+    height: 50px;
+    border-collapse: collapse;
+    background-color: #FFF;
+    border: 1px solid #11A076;
+    text-align: center;
+}
+.table2 button{
+    height: 40px;
+    width: 150px;
+    background-color: #11A076;
+    color: #FFF;
+    border: none;
+    border-radius: 2px;
+}
+.table2 button:hover{
+    border: 1px solid #11A076;
+    color: #11A076;
+    background-color: #FFF;
+}
+.modal-container{
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    height: 100vw;
+    width: 100vh;
+    transition: visibility 0.4s;
+}
+.modal-container.active .overlay{
+    opacity: 1;
+    transition: opacity 0.4s ease-out;
+}
+.modal-container.active{
+    visibility: visible;
+}
+.overlay{
+    opacity: 0;
+    transition: opacity 0.4s 0.2s ease-out;
+    position: absolute;
+    width: 2050px;
+    opacity: 0.9;
+    height: 100%;
+    background: #333333d3;
+}
+.modal h1{
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+.modal{
+    width: 95%;
+    height: 250px;
+    max-width: 500px;
+    padding: 30px;
+    min-width: 300px;
+    border-radius: 5px;
+    position: absolute;
+    background: #fff;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0/4s ease-out;
+}
+.modal-container.active .modal{
+    opacity: 1;
+    transition: opacity 0.4s 0.2s ease-out;
+}
+.modal input{
+    height: 40px;
+    margin: 8%;
+    width: 350px;
+}
+.modal button{
+    height: 45px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: #FFF;
+    border: 1px solid #000;
+    margin: 0 30%;
+}
+.modal button:hover{
+    border: 1px solid #11A076;
+    color: #11A076;
+}
+
+
+.text-container{
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    height: 100vw;
+    width: 100vh;
+    transition: visibility 0.4s;
+}
+.text-container.active .text-overlay{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.4s ease-out;
+}
+.text-overlay{
+    background: #333333d3;
+    opacity: 0;
+    transition: opacity 0.4s 0.2s ease-out;
+    position: absolute;
+    width: 2050px;
+    opacity: 0.9;
+    height: 100%;
+}
+.text-modal h1{
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+.text-modal{
+    width: 95%;
+    height: 220px;
+    max-width: 500px;
+    padding: 30px;
+    min-width: 300px;
+    border-radius: 5px;
+    position: absolute;
+    background: #fff;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text-container{
+    position: fixed;
+    top: 0;
+    height: 100vw;
+    width: 100vh;
+    transition: visibility 0.4s;
+}
+.choix{
+    height: 120px;
+    width: 100%;
+    display: flex;
+    margin: 2% 1%;
+    justify-content: space-between;
+}
+.choix div{
+    height: 105px;
+    width: 25%;
+    margin: 1%;
+}
+.choix div img{
+    height: 105px;
+    width: 100%;
 }
