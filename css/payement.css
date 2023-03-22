@@ -177,7 +177,46 @@ td{
     color: #11A076;
 }
 
-
+.orange{
+    background-color: #EF6314;
+}
+.mtn{
+    background-color: #F0D548;
+}
+.wave{
+    background-color: #199EE1;
+}
+.moov{
+    background-color: #479C32;
+}
+.choix{
+    height: 120px;
+    width: 100%;
+    display: flex;
+    margin: 3% 1%;
+    justify-content: space-between;
+}
+.choix div{
+    height: 80px;
+    width: 26%;
+    margin:0.5%;
+    padding: 7px;
+    border-radius: 20px;
+}
+.choix div img{
+    height: 30px;
+    border-radius: 30px;
+    margin-top: 15px;
+    width: 30px;
+    float: right;
+}
+.choix div p{
+    float: left;
+    margin-top: 15px;
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #fff;
+}
 .text-container{
     visibility: hidden;
     position: fixed;
@@ -201,12 +240,12 @@ td{
     height: 100%;
 }
 .text-modal h1{
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 100;
 }
 .text-modal{
-    width: 95%;
-    height: 220px;
+    width: 98%;
+    height: 180px;
     max-width: 500px;
     padding: 30px;
     min-width: 300px;
@@ -217,26 +256,201 @@ td{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.text-container{
+.orange_container{
+    visibility: hidden;
     position: fixed;
     top: 0;
     height: 100vw;
     width: 100vh;
     transition: visibility 0.4s;
 }
-.choix{
-    height: 120px;
-    width: 100%;
-    display: flex;
-    margin: 2% 1%;
-    justify-content: space-between;
+.orange_container.active .overlay-orange{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.4s ease-out;
 }
-.choix div{
-    height: 105px;
-    width: 25%;
-    margin: 1%;
+.overlay-orange{
+    background: #333333d3;
+    opacity: 0;
+    transition: opacity 0.4s 0.2s ease-out;
+    position: absolute;
+    width: 2050px;
+    opacity: 0.9;
+    height: 100%;
 }
-.choix div img{
-    height: 105px;
-    width: 100%;
+.orange-modal{
+    width: 98%;
+    height: 180px;
+    max-width: 500px;
+    padding: 30px;
+    min-width: 300px;
+    border-radius: 5px;
+    position: absolute;
+    background: #fff;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mtn_container{
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    height: 100vw;
+    width: 100vh;
+    transition: visibility 0.4s;
+}
+.mtn_container.active .overlay-mtn{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.4s ease-out;
+}
+.overlay-mtn{
+    background: #333333d3;
+    opacity: 0;
+    transition: opacity 0.4s 0.2s ease-out;
+    position: absolute;
+    width: 2050px;
+    opacity: 0.9;
+    height: 100%;
+}
+.mtn-modal{
+    width: 98%;
+    height: 180px;
+    max-width: 500px;
+    padding: 30px;
+    min-width: 300px;
+    border-radius: 5px;
+    position: absolute;
+    background: #fff;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wave_container{
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    height: 100vw;
+    width: 100vh;
+    transition: visibility 0.4s;
+}
+.wave_container.active .overlay-wave{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.4s ease-out;
+}
+.overlay-wave{
+    background: #333333d3;
+    opacity: 0;
+    transition: opacity 0.4s 0.2s ease-out;
+    position: absolute;
+    width: 2050px;
+    opacity: 0.9;
+    height: 100%;
+}
+.wave-modal{
+    width: 98%;
+    height: 180px;
+    max-width: 500px;
+    padding: 30px;
+    min-width: 300px;
+    border-radius: 5px;
+    position: absolute;
+    background: #fff;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.moov_container{
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    height: 100vw;
+    width: 100vh;
+    transition: visibility 0.4s;
+}
+.moov_container.active .overlay-moov{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.4s ease-out;
+}
+.overlay-moov{
+    background: #333333d3;
+    opacity: 0;
+    transition: opacity 0.4s 0.2s ease-out;
+    position: absolute;
+    width: 2050px;
+    opacity: 0.9;
+    height: 100%;
+}
+.moov-modal{
+    width: 98%;
+    height: 180px;
+    max-width: 500px;
+    padding: 30px;
+    min-width: 300px;
+    border-radius: 5px;
+    position: absolute;
+    background: #fff;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.orange-modal{
+    background-color: #EF6314;
+}
+.orange-modal img{
+    height: 60px;
+    width: 60px;
+    float: right;
+}
+.orange-modal h1{
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 100;
+}
+
+.mtn-modal{
+    background-color: #F0D548;
+}
+.mtn-modal img{
+    height: 60px;
+    width: 60px;
+    float: right;
+}
+.mtn-modal h1{
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 100;
+}
+
+.wave-modal{
+    background-color: #199EE1;
+}
+.wave-modal img{
+    height: 60px;
+    width: 60px;
+    float: right;
+}
+.wave-modal h1{
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 100;
+}
+
+.moov-modal{
+    background-color: #479C32;
+}
+.moov-modal img{
+    height: 60px;
+    width: 60px;
+    float: right;
+}
+.moov-modal h1{
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 100;
 }
