@@ -402,6 +402,19 @@ td{
 .orange-modal{
     background-color: #EF6314;
 }
+.orange-modal button{
+    height: 50px;
+    width: 200px;
+    margin: 50px;
+    border: 1px solid #FFF;
+    background-color: #EF6314;
+    color: #fff;
+    border-radius: 5px;
+}
+.orange-modal button:hover{
+    background-color: #FFF;
+    color: #EF6314;
+}
 .orange-modal img{
     height: 60px;
     width: 60px;
@@ -426,6 +439,20 @@ td{
     color: #fff;
     font-weight: 100;
 }
+.mtn-modal button{
+    height: 50px;
+    width: 200px;
+    margin: 50px;
+    border: 1px solid #FFF;
+    background-color: #F0D548;
+    color: #fff;
+    border-radius: 5px;
+}
+.mtn-modal button:hover{
+    background-color: #FFF;
+    color: #F0D548;
+}
+
 
 .wave-modal{
     background-color: #199EE1;
@@ -440,6 +467,21 @@ td{
     color: #fff;
     font-weight: 100;
 }
+.wave-modal button{
+    height: 50px;
+    width: 200px;
+    margin: 50px;
+    border: 1px solid #FFF;
+    background-color: #199EE1;
+    color: #fff;
+    border-radius: 5px;
+}
+.wave-modal button:hover{
+    background-color: #FFF;
+    color: #199EE1;
+}
+
+
 
 .moov-modal{
     background-color: #479C32;
@@ -453,4 +495,17 @@ td{
     font-size: 1.3rem;
     color: #fff;
     font-weight: 100;
+}
+.moov-modal button{
+    height: 50px;
+    width: 200px;
+    margin: 50px;
+    border: 1px solid #FFF;
+    background-color: #479C32;
+    color: #fff;
+    border-radius: 5px;
+}
+.moov-modal button:hover{
+    background-color: #FFF;
+    color: #479C32;
 }
