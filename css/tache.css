@@ -110,23 +110,12 @@ a{
     font-weight: bold;
     background-color: #FFF;
 }
-.admin-img{
-    height: 150px;
-    width: 200px;
-    margin: 10% 25% 30% 18%;
-}
-.admin-img img{
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    margin: 10px;
-}
 .container1 i{
     padding: 5%;
 }
 table{
-    width: 95%;
-    margin: 2.5%;
+    width: 85%;
+    margin: 2.5% auto;
     color: #FFF;
     font-weight: bold;
 }
@@ -138,4 +127,48 @@ table, th, td {
 }
 td{
     width: 15%;
+}
+.table1{
+    border: 1px solid #11A076;
+}
+.table1 td{
+    color: #000;
+    background-color: #FFF;
+    font-weight: 100;
+}
+.table1 div{
+    height: 40px;
+    width: 700px;
+    font-size: 0.5;
+}
+.table1 button{
+    padding: 10px;
+    height: 40px;
+    font-size: 0.9rem;
+    color: #000;
+    background-color: #D4D4D4;
+    width: 170px;
+    border-radius: 5px;
+    border: 1px solid #FFF;
+}
+.table1 .span {
+    float: right;
+    display: flex;
+    height: 20px;
+    width: 50px;
+}
+.span span{
+    padding: 6px;
+    margin: 1.5px;
+    border: 2px solid #FFF;
+    border-radius: 20px;
+}
+.enCour{
+    background-color: #D4D4D4;
+}
+.termin{
+    background-color: #479C32;
+}
+.nonTerm{
+    background-color: #199EE1;
 }

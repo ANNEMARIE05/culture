@@ -57,21 +57,6 @@ a{
     margin: 25px;
     float: right;
 }
-.admin-img{
-    color: #11A076;
-    height: 150px;
-    width: 200px;
-    margin: 10% 15% 30%;
-}
-.admin-img h1{
-    font-size: 1.5rem;
-}
-.admin-img img{
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    margin: 10px;
-}
 .container1 i{
     padding: 5%;
 }

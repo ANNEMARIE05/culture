@@ -57,20 +57,12 @@ a{
     margin: 25px;
     float: right;
 }
-.admin-img{
-    height: 150px;
-    width: 200px;
-    margin: 10% 25% 30% 18%;
-}
-.admin-img img{
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    margin: 10px;
-}
 .container1 i{
     padding: 5%;
 }
+
+
+
 
 
 .tableau{
@@ -112,6 +104,18 @@ td{
     color: #11A076;
     background-color: #FFF;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 .modal-container{
     visibility: hidden;
     position: fixed;

@@ -57,65 +57,56 @@ a{
     margin: 25px;
     float: right;
 }
-.admin-img{
-    height: 150px;
-    width: 200px;
-    margin: 10% 25% 30% 18%;
-}
-.admin-img img{
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    margin: 10px;
-}
 .container1 i{
     padding: 5%;
 }
 .mesBilan{
-    height: 350px;
-    width: 93%;
-    margin: 2% 3%;
+    height: 280px;
+    width: 80%;
+    margin: 2% auto;
     display: flex;
 }
 .mesBilan .items{
-    height: 320px;
+    height: 250px;
     color: #FFF;
     width: 32%;
-    margin: 1%;
+    margin: 2%;
+    border-radius: 5px;
     background-color: #11A076;
 }
 .mesBilans{
-    height: 350px;
-    width: 93%;
-    margin: 2% 3%;
+    height: 280px;
+    width: 80%;
+    margin: 2% auto;
     display: flex;
 }
 .mesBilans .items{
-    height: 320px;
+    height: 250px;
     color: #FFF;
     width: 32%;
-    margin: 1%;
+    margin: 2%;
+    border-radius: 5px;
     background-color: #11A076;
 }
 .items .div{
-    height: 160px;
+    height: 120px;
     text-align: center;
-    width: 170px;
-    margin: 8% auto 0;
+    width: 140px;
+    margin: 8% auto;
     border-radius: 50%;
     color: black;
     background-color: #FFF;
 }
 .div label{
     position: relative;
-    top: 70px;
+    top: 50px;
 }
 .items .span{
-    height: 50px;
+    height: 35px;
     width: 100%;
     background-color: #FFF;
     position: relative;
-    top: 35px;
+    top: 25px;
     border: 1px solid #11A076;
 }
 .items h1{
