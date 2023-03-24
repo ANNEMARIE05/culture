@@ -9,13 +9,13 @@
     margin: 13% auto;
     width: 600px;
     background-image: linear-gradient(rgba(34,34,34,0.6),rgba(34,34,34,0.6)),
-    url(../images/pexels-pixabay-50707.jpg);
+    url(../agriimages/pexels-pixabay-50707.jpg);
 }
 body{
     background-color: #11a0755d;
     font-family: Arial, Helvetica, sans-serif;
     background-image: linear-gradient(rgba(17, 160, 117, 0.761),rgba(17, 160, 117, 0.761)),
-    url(../images/pexels-pixabay-50707.jpg);
+    url(../agriimages/pexels-pixabay-50707.jpg);
     background-size: cover;
 }
 .connexion h1{

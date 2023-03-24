@@ -18,10 +18,10 @@ btn.addEventListener("click" , function(e){
    let mail = email.value;
    let motPasse = passe.value;
    if(admin.email === mail && admin.password === motPasse){
-    window.location.pathname="../html/accueil.html";
+    window.location.pathname="../agrihtml/accueil.html";
     localStorage.setItem("admin",JSON.stringify(admin))
    }else if(superAdmin.email === mail && superAdmin.password === motPasse){
-    window.location.pathname="../admin/accueilAdmin.html";
+    window.location.pathname="../agriadmin/accueilAdmin.html";
     localStorage.setItem("superAdmin",JSON.stringify(superAdmin))
    }else{
     mail.
