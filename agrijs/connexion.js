@@ -21,7 +21,7 @@ btn.addEventListener("click" , function(e){
     window.location.pathname="agrihtml/accueil.html";
     localStorage.setItem("admin",JSON.stringify(admin))
    }else if(superAdmin.email === mail && superAdmin.password === motPasse){
-    window.location.pathname="agriadmin/accueilAdmin.html";
+    window.location.pathname="/agriadmin/accueilAdmin.html";
     localStorage.setItem("superAdmin",JSON.stringify(superAdmin))
    }else{
     alert("Les champs que vous avez remplir sont incorrects . Vous n'êtes pas autoriser a acceder a la plateforme ")
