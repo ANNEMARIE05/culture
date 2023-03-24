@@ -60,5 +60,5 @@ function user_save(){
     contacts.textContent=objEmpl.contact
     line.append(contacts)
     
-    const modifier = document.createElement("<i class="fa-solid fa-pen-to-square"></i>")
+    const modifier = document.createElement("")
 }
