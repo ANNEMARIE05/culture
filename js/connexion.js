@@ -7,20 +7,25 @@ let superAdmin = {
     password: 'superAdmin@',
 };
 
-
-console.log(superAdmin.email);
 let email = document.querySelector(".email")
-let passe = document.querySelector(".passe").value;
+let passe = document.querySelector(".passe")
 let btn = document.querySelector("button")
 
 
 
+
 btn.addEventListener("click" , function(e){
-   let et=email.value
-   console.log(et);
+   let mail = email.value;
+   let motPasse = passe.value;
+   if(admin.email === mail && admin.password === motPasse){
+    window.location.pathname="../html/accueil.html";
+    localStorage.setItem("admin",JSON.stringify(admin))
+   }else if(superAdmin.email === mail && superAdmin.password === motPasse){
+    window.location.pathname="../admin/accueilAdmin.html";
+    localStorage.setItem("superAdmin",JSON.stringify(superAdmin))
+   }else{
+    mail.
+    alert("Les champs que vous avez remplir sont incorrects . Vous n'êtes pas autoriser a acceder a la plateforme ")
+   }
+
 })
-
-// localStorage.getItem("seConnecter")
-// let mesValeurs = JSON(localStorage.getItem("seConnecter"));
-// let recupererValeurs = localStorage.setItem('mesValeurs', JSON.stringify(admin));
-

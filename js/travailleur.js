@@ -1,49 +1,64 @@
-let btn = document.querySelector(".btn");
-let tab = document.querySelector(".tab");
-let var1 = document.querySelector(".nom")
-let var2 = document.querySelector(".prenom")
-let var3 = document.querySelector(".statut")
-let var4 = document.querySelector(".contact")
+let btn = document.querySelector(".btn")
 
 
-// btn.addEventListener("click", function(e){
+btn.addEventListener("click", user-save)
 
-//     // creation de nouvelle div
+function user_save(){
+    const nom = document.getElementById('nom')
+    const prenom = document.getElementById("prenom")
+    const profession = document.getElementById('profession')
+    const contact = document.getElementById('contact')
 
+    const tab = [];
+    const objEmpl = {
+        id : "",
+        nom : nom.value,
+        prenom : prenom.value,
+        profession : profession.value,
+        contact : contact.value
+    }
 
-//     var div = document.createElement('div')
-//     div.style.height=" 50px"
-//     div.style.width="95.5%"
-//     div.style.border="1px solid #0D5447"
-//     div.style.margin="0 0 0 2.5%"
-//     div.style.display="flex"
-//     div.style.padding= "1% 8% 0"
-//     div.style.justifyContent= "space-between"
- 
+    const dataEmpl = localStorage.getItem('employes');
+    let tabJ = JSON.parse(dataEmpl);
+    if(!dataEmpl){
+        objEmpl.id='Tr1';
+        tab.push(objEmpl);
+        localStorage.setItem('employes',JSON.stringify(tab))
+    }else{
+        
+        objEmpl.id="Tr"+(tabJ.length+1);
+        tabJ.push(objEmpl);
+        localStorage.setItem("employes",JSON.stringify(tabJ));   
+    }
 
-//     // creation de nouveau elements 
+    const line = document.createElement("tr");
+    line.className = 'attributs';
+    line.id="attributs"+objEmpl.id.replace('Tr', '');
 
+    const idt = document.createElement('td');
+    idt.id='ids'+(tabJ.length+1);
+    idt.textContent=objEmpl.id;
+    line.append(idt)
 
-//     let nom = document.createElement("label")
-//     let surname = document.createElement("label")
-//     let stauts = document.createElement("label")
-//     let call = document.createElement("label")
+    const user = document.createElement('td')
+    user.id='users'+(tabJ.length+1);
+    user.textContent=objEmpl.nom
+    line.append(user)
 
+    const surname = document.createElement('td')
+    surname.id='surname'+(tabJ.length+1);
+    surname.textContent=objEmpl.prenom
+    line.append(surname)
 
+    const job = document.createElement('td')
+    job.id='surname'+(tabJ.length+1);
+    job.textContent=objEmpl.profession
+    line.append(job)
 
-//     // ajout des valeurs au differents e
-
-//     nom.textContent = var1.value
-//     surname.textContent = var2.value
-//     stauts.textContent = var3.value
-//     call.textContent = var4.value
-
-
-//     tab.appendChild(div)
-//     div.appendChild(nom)
-//     div.appendChild(surname)
-//     div.appendChild(stauts)
-//     div.appendChild(call)
-
-//     return false
-// })
+    const contacts = document.createElement('td')
+    contacts.id='contacts'+(tabJ.length+1);
+    contacts.textContent=objEmpl.contact
+    line.append(contacts)
+    
+    const modifier = document.createElement("<i class="fa-solid fa-pen-to-square"></i>")
+}
