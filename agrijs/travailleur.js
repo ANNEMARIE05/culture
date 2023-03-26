@@ -1,97 +1,139 @@
-
-
-let soumettre = document.getElementById("submit")
-
-soumettre.addEventListener("click", user_save)
-
-function user_save(){
-    const addNom = document.getElementById('nom')
-    const addPrenom = document.getElementById("prenom")
-    const addProfession = document.getElementById('profession')
-    const addContact = document.getElementById('contact')
-alert("bbbbb")
-    console.log(addNom.value)
-    console.log(addPrenom.value);
-    console.log(addProfession.value)
-    console.log(addContact.value);
-
-    const tab = [];
-    const objEmpl = {
-        id : "",
-        addNom : addNom.value,
-        addPrenom : addPrenom.value,
-        addProfession : addProfession.value,
-        addContact : addContact.value
+let travailleurs = [
+    {
+        id: 1,
+        nom: "anne",
+        prenom: "marie",
+        profession:"programmeuse",
+        contact: "234567890",
+        taches: [
+            {
+                id:1,
+                tache:'dormir',
+                somme:'40000',
+                jour: '22',
+                mois: '11',
+                annee: '1092',
+                etat: "termine"
+            }
+        ]
     }
+]
 
-    const dataEmpl = localStorage.getItem('employes');
-    let tabJ = JSON.parse(dataEmpl);
-    if(!dataEmpl){
-        objEmpl.id='Tr1';
-        tab.push(objEmpl);
-        localStorage.setItem('employes',JSON.stringify(tab))
+
+
+function addTravailleur(travailleurs){
+        localStorage.setItem('travailleurs',JSON.stringify(travailleurs))
+}
+
+// addTravailleur(travailleurs)//
+
+
+
+function getTravailleurs(){
+    let travailleurs = localStorage.getItem('travailleurs')
+    if(travailleurs === null){
+        return []
     }else{
-        
-        objEmpl.id="Tr"+(tabJ.length+1);
-        tabJ.push(objEmpl);
-        localStorage.setItem("employes",JSON.stringify(tabJ));   
-    }
-
-    const line = document.createElement("tr");
-    line.className = 'attributs';
-    line.id="attribut"+objEmpl.id.replace('Tr', '');
-    const idt = document.createElement('td');
-    idt.id='ids'+(tabJ.length+1);
-    idt.textContent=objEmpl.id;
-    line.append(idt)
-    const user = document.createElement('td')
-    user.id='nom'+(tabJ.length+1);
-    user.textContent=objEmpl.addNom
-    line.append(user)
-    const surname = document.createElement('td')
-    surname.id='prenom'+(tabJ.length+1);
-    surname.textContent=objEmpl.addPrenom
-    line.append(surname)
-    const job = document.createElement('td')
-    job.id='profession'+(tabJ.length+1);
-    job.textContent=objEmpl.addProfession
-    line.append(job)
-    const contacts = document.createElement('td')
-    contacts.id='contact'+(tabJ.length+1);
-    contacts.textContent=objEmpl.addContact
-    line.append(contacts)
-}
-
-const selectUer =JSON.parse(localStorage.getItem('employes'))
-function affiche(params){
-    if((params.length != 0)){
-        params.forEach(element => {
-            const line = document.createElement("tr");
-            line.className = 'attributs';
-            line.id="attributs"+objEmpl.id.replace('Tr', '');
-            const idt = document.createElement('td');
-            idt.id='ids'+(tabJ.length+1);
-            idt.textContent=objEmpl.id;
-            line.append(idt)
-            const user = document.createElement('td')
-            user.id='nom'+(tabJ.length+1);
-            user.textContent=objEmpl.addNom
-            line.append(user)        
-            const surname = document.createElement('td')
-            surname.id='prenom'+(tabJ.length+1);
-            surname.textContent=objEmpl.addPrenom
-            line.append(surname)  
-            const job = document.createElement('td')
-            job.id='profession'+(tabJ.length+1);
-            job.textContent=objEmpl.addProfession
-            line.append(job)       
-            const contacts = document.createElement('td')
-            contacts.id='contact'+(tabJ.length+1);
-            contacts.textContent=objEmpl.addContact
-            line.append(contacts)
-            document.getElementById("attribut").append(line)
-
-        });
+        return JSON.parse(travailleurs)
     }
 }
-affiche(selectUer)
+
+
+function afficherTravailleurs(){
+    const listOfTravailleurs = document.getElementById('all-ravailleurs')
+
+    let ourtravailleurs = getTravailleurs()
+    ourtravailleurs.map((travailleur)=>{
+        listOfTravailleurs.innerHTML += `
+        <tr>
+            <td>${travailleur.id}</td>
+            <td>${travailleur.nom}</td>
+            <td>${travailleur.prenom}</td>
+            <td>${travailleur.profession}</td>
+            <td>${travailleur.contact}</td>
+            <td>
+                <a href="modifier.html?id=${travailleur.id}"><i class="fa fa-edit"></i>Modifier</a>
+                <a href="" onclick='deleteTravailleurs(${travailleur.id})' ><i class="fa fa-trash"></i>Supprimer</a>
+            </td>
+        </tr>
+        `
+    })
+
+    
+}
+afficherTravailleurs()
+
+function submit(){
+    let soumettre = document.getElementById('submit')
+    soumettre.addEventListener('click',(e)=>{
+        let ourtravailleurs = getTravailleurs()
+        let id = document.getElementById('id').value;
+        let nom = document.getElementById('nom').value;
+        let prenom = document.getElementById('prenom').value;
+        let profession = document.getElementById('profession').value;
+        let contact = document.getElementById('contact').value;
+        // console.log({id,nom,prenom,profession,contact});
+        let tache = []
+        let data = {
+            id,
+            nom,
+            prenom,
+            profession,
+            contact,
+            tache
+        }
+        // console.log(data);
+        let searchTravailleurs = ourtravailleurs.find((t)=>{
+            t.contact===contact
+        })
+        if(searchTravailleurs !== undefined){
+            alert('le travailleurs existe déja')
+        }else{
+            ourtravailleurs.push(data)
+            addTravailleur(ourtravailleurs)
+        }
+    })
+}
+submit()
+
+function deleteTravailleurs(id){
+    let ourtravailleurs = getTravailleurs()
+    let travailleur = ourtravailleurs.filter((t)=> t.id != id)
+    addTravailleur(travailleur)
+    location.pathname='travailleur.html'
+}
+
+function rechercheTracvailleurs(){
+    let affichage = document.getElementById('reponse-serveur')
+    let recherche = document.getElementById("recherche")
+    let ourtravailleurs = getTravailleurs()
+    recherche.addEventListener("input", (e)=>{
+        let motAChercher = e.currentTarget.value
+        let reponse = ourtravailleurs.filter((t)=>t.nom.toLowerCase()===motAChercher.toLowerCase())
+        if(motAChercher!== ""){
+            if(reponse !== []){
+                affichage.classList.add("reponse")
+                for (const travailleur of reponse) {
+                    affichage.innerHTML+=`
+                    <div class="row">
+                        <p>${travailleur.nom} ${travailleur.prenom} </p>
+                    </div>
+                    `
+                }
+            }else{
+                affichage.classList.remove("reponse")
+            }
+        }else{
+            affichage.classList.remove('reponse')
+            affichage.innerHTML = ""
+            motAChercher = ""
+        }
+    })
+}
+rechercheTracvailleurs()
+
+
+
+function nombreTotalTravailleur(e){
+    
+}

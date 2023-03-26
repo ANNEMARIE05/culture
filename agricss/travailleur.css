@@ -143,3 +143,13 @@ td{
 .suprimer{
     color: red;
 }
+
+
+.reponse{
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #fff;
+}
